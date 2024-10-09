@@ -1,3 +1,5 @@
 # Levi's own Neovim configuration
 
-// put personal customization docs here
+## Additional plugins added
+- cord.nvim | Discord rich presence plugin
+- copilot.nvim | Github copilot plugin
