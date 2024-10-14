@@ -27,3 +27,7 @@ I have some keymaps binded to the plugins I use, you can check them in the `lua/
 - "Dh" : "Hide presence",
 - "Di" : "Show idle status",
 - "Du" : "Unhide idle status",
+
+## Colorscheme
+
+This neovim configuration is using the <a href="https://github.com/sainnhe/everforest">EverForest</a>
