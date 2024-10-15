@@ -4,7 +4,8 @@
 
 - [Levi's own Neovim configuration](#levis-own-neovim-configuration)
   - [Additional plugins added](#additional-plugins-added)
-  - [Keymaps added](#keymaps-added) - [cord.nvim](#cordnvim)
+  - [Keymaps added](#keymaps-added)
+  - [cord.nvim](#cordnvim)
   <!--toc:end-->
 
 ## Additional plugins added
@@ -40,4 +41,4 @@ I have some keymaps binded to the plugins I use, you can check them in the `lua/
 
 ## Colorscheme
 
-This neovim configuration is using the <a href="https://github.com/sainnhe/everforest">EverForest</a>
+This neovim configuration is using the [EverForest](https://github.com/sainnhe/everforest)
