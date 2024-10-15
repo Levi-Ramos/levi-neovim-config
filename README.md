@@ -1,4 +1,4 @@
-# Levi's own Neovim configuration
+# CheerfuleBeasts' Nvim configuration
 
 <!--toc:start-->
 
