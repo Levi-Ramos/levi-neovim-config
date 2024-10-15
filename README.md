@@ -28,6 +28,16 @@ I have some keymaps binded to the plugins I use, you can check them in the `lua/
 - "Di" : "Show idle status",
 - "Du" : "Unhide idle status",
 
+### mini.surround
+
+- "gsa" : Add surround
+- "gsd" : Delete surround
+- "gsf" : Find surround (to the right)
+- "gsF" : Find surround (to the left)
+- "gsh" : Highlight surround
+- "gsr" : Replace surround
+- "gsn" : update 'n_lines'
+
 ## Colorscheme
 
 This neovim configuration is using the <a href="https://github.com/sainnhe/everforest">EverForest</a>
