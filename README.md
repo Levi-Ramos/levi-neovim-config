@@ -12,6 +12,7 @@
 
 - cord.nvim | Discord rich presence plugin
 - copilot.nvim | Github copilot plugin
+- harpoon2 | fast switching
 
 ## Keymaps added
 
@@ -42,3 +43,7 @@ I have some keymaps binded to the plugins I use, you can check them in the `lua/
 ## Colorscheme
 
 This neovim configuration is using the [EverForest](https://github.com/sainnhe/everforest)
+
+## Work in progress
+
+Currently working in implementing Tmux for better workflow
