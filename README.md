@@ -30,7 +30,7 @@ I have some keymaps binded to the plugins I use, you can check them in the `lua/
 - "Di" : "Show idle status",
 - "Du" : "Unhide idle status",
 
-### mini.surround
+### mini.surround (default mappings)
 
 - "gsa" : Add surround
 - "gsd" : Delete surround
