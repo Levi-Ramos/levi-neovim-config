@@ -8,7 +8,7 @@
   - [cord.nvim](#cordnvim)
   <!--toc:end-->
 
-## Additional plugins added
+## Additional plugins
 
 - cord.nvim | Discord rich presence plugin
 - copilot.nvim | Github copilot plugin
