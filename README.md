@@ -10,9 +10,10 @@
 
 ## Additional plugins
 
-- cord.nvim | Discord rich presence plugin
-- copilot.nvim | Github copilot plugin
-- harpoon2 | fast switching
+- cord.nvim : Discord rich presence plugin
+- copilot.nvim : Github copilot plugin
+- harpoon2 : fast file navigation plugin
+- surround : surround actions plugin
 
 ## Keymaps added
 
