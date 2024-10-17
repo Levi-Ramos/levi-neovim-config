@@ -49,3 +49,4 @@ This neovim configuration is using the [EverForest](https://github.com/sainnhe/e
 
 - integrate tmux into workflow
 - add multi cursor plugin
+- connect to discord rich presence on launch
