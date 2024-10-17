@@ -47,4 +47,5 @@ This neovim configuration is using the [EverForest](https://github.com/sainnhe/e
 
 ## Work in progress
 
-Currently working in implementing Tmux for better workflow
+- integrate tmux into workflow
+- add multi cursor plugin
