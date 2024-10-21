@@ -10,8 +10,8 @@ return {
           url = "https://github.com/Levi-Ramos",
         },
         {
-          label = "Neovim Config",
-          url = "https://github.com/Levi-Ramos/levi-neovim-config",
+          label = "Follow me on facebook",
+          url = "https://www.facebook.com/joshua.aranio.3",
         },
       },
 
