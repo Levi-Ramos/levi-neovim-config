@@ -8,6 +8,10 @@
   - [cord.nvim](#cordnvim)
   <!--toc:end-->
 
+## Requirements
+- Neovim 0.10
+- any nerdfont
+
 ## Additional plugins
 
 - cord.nvim : Discord rich presence plugin
