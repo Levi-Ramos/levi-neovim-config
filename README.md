@@ -3,6 +3,7 @@
 <!--toc:start-->
 
 - [CheerfulBeasts's Neovim configuration](#levis-own-neovim-configuration)
+  - [Requirements](#requirementes)
   - [Additional plugins added](#additional-plugins-added)
   - [Keymaps bindings](#keymaps-added)
   - [cord.nvim](#cordnvim)
