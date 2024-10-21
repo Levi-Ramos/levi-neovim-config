@@ -1,8 +1,8 @@
-# Levi's own Neovim configuration
+# CheerfulBeasts's Neovim configuration
 
 <!--toc:start-->
 
-- [Levi's own Neovim configuration](#levis-own-neovim-configuration)
+- [CheerfulBeasts's Neovim configuration](#levis-own-neovim-configuration)
   - [Additional plugins added](#additional-plugins-added)
   - [Keymaps bindings](#keymaps-added)
   - [cord.nvim](#cordnvim)
