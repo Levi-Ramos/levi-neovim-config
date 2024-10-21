@@ -4,7 +4,7 @@
 
 - [Levi's own Neovim configuration](#levis-own-neovim-configuration)
   - [Additional plugins added](#additional-plugins-added)
-  - [Keymaps added](#keymaps-added)
+  - [Keymaps bindings](#keymaps-added)
   - [cord.nvim](#cordnvim)
   <!--toc:end-->
 
@@ -14,6 +14,7 @@
 - copilot.nvim : Github copilot plugin
 - harpoon2 : fast file navigation plugin
 - surround : surround actions plugin
+- flutter-tools : flutter tools plugin for flutter environment
 
 ## Keymaps added
 
@@ -41,7 +42,18 @@ I have some keymaps binded to the plugins I use, you can check them in the `lua/
 - "gsr" : Replace surround
 - "gsn" : update 'n_lines'
 
-## Colorscheme
+### flutter-tools
+
+- "Frr" : Run Flutter session
+- "Fd" : Show flutter devices
+- "Fe" : show flutter emulators
+- "Fre" : Reload flutter session
+- "Frs" : Restart flutter session
+- "Fq" : quit flutter session
+- "Fo" : Toggle flutter outline
+- "Fl" : Restart flutter lsp (Language server protocol)
+
+## Color Scheme
 
 This neovim configuration is using the [EverForest](https://github.com/sainnhe/everforest)
 
