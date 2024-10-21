@@ -18,11 +18,10 @@
 
 ## Keymaps added
 
-I have some keymaps binded to the plugins I use, you can check them in the `lua/keymaps.lua` file.
+I have some keymaps binded to the plugins I use, located at `lua/keymaps.lua`.
 
 ### cord.nvim
 
-- "D" : Opens discord panel in which-key
 - "Dc" : "Connect to discord",
 - "Dr" : "Reconnect to discord",
 - "Dd" : "Disconnect from discord",
