@@ -1,12 +1,17 @@
-# Levi's own Neovim configuration
+# CheerfulBeasts's Neovim configuration
 
 <!--toc:start-->
 
-- [Levi's own Neovim configuration](#levis-own-neovim-configuration)
+- [CheerfulBeasts's Neovim configuration](#levis-own-neovim-configuration)
+  - [Requirements](#requirements)
   - [Additional plugins added](#additional-plugins-added)
   - [Keymaps bindings](#keymaps-added)
   - [cord.nvim](#cordnvim)
   <!--toc:end-->
+
+## Requirements
+- Neovim 0.10
+- any nerdfont
 
 ## Additional plugins
 
@@ -18,11 +23,10 @@
 
 ## Keymaps added
 
-I have some keymaps binded to the plugins I use, you can check them in the `lua/keymaps.lua` file.
+I have some keymaps binded to the plugins I use, located at `lua/keymaps.lua`.
 
 ### cord.nvim
 
-- "D" : Opens discord panel in which-key
 - "Dc" : "Connect to discord",
 - "Dr" : "Reconnect to discord",
 - "Dd" : "Disconnect from discord",
