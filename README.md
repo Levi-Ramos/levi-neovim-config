@@ -10,6 +10,7 @@
   <!--toc:end-->
 
 ## Requirements
+
 - Neovim 0.10
 - any nerdfont
 
@@ -20,6 +21,7 @@
 - harpoon2 : fast file navigation plugin
 - surround : surround actions plugin
 - flutter-tools : flutter tools plugin for flutter environment
+- tailwind-tools: tailwind css plugin
 
 ## Keymaps added
 
