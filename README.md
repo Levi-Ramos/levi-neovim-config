@@ -14,6 +14,9 @@
 - Neovim 0.10
 - any nerdfont
 
+## Installation
+WIP
+
 ## Additional plugins
 
 - cord.nvim : Discord rich presence plugin
