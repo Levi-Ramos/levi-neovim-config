@@ -48,11 +48,42 @@ vim.keymap.set("n", "<leader>Du", function()
 end)
 
 -- flutter plugin tools keymaps
-vim.keymap.set("n", "<leader>Frr", ":FlutterRun<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>Fd", ":FlutterDevices<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>Fe", ":FlutterEmulators<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>Fre", ":FlutterReload<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>Frs", ":FlutterRestart<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>Fq", ":FlutterQuit<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>Fo", ":FlutterOutlineToggle<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>Fl", ":FlutterLspRestart<CR>", { noremap = true, silent = true })
+local function setup_flutter_keymaps()
+  vim.keymap.set("n", "<leader>Frr", ":FlutterRun<CR>", { noremap = true, silent = true, desc = "Run Flutter" })
+  vim.keymap.set(
+    "n",
+    "<leader>Fd",
+    ":FlutterDevices<CR>",
+    { noremap = true, silent = true, desc = "Show Flutter Devices" }
+  )
+  vim.keymap.set(
+    "n",
+    "<leader>Fe",
+    ":FlutterEmulators<CR>",
+    { noremap = true, silent = true, desc = "Show Flutter Emulators" }
+  )
+  vim.keymap.set("n", "<leader>Fre", ":FlutterReload<CR>", { noremap = true, silent = true, desc = "Hot Reload" })
+  vim.keymap.set("n", "<leader>Frs", ":FlutterRestart<CR>", { noremap = true, silent = true, desc = "Restart Flutter" })
+  vim.keymap.set("n", "<leader>Fq", ":FlutterQuit<CR>", { noremap = true, silent = true, desc = "Quit Flutter" })
+  vim.keymap.set(
+    "n",
+    "<leader>Fo",
+    ":FlutterOutlineToggle<CR>",
+    { noremap = true, silent = true, desc = "Toggle Flutter Outline" }
+  )
+  vim.keymap.set(
+    "n",
+    "<leader>Fl",
+    ":FlutterLspRestart<CR>",
+    { noremap = true, silent = true, desc = "Restart Flutter LSP" }
+  )
+end
+
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    local client = vim.lsp.get_client_by_id(args.data.client_id)
+    if client and client.name == "dartls" then
+      setup_flutter_keymaps()
+    end
+  end,
+})
