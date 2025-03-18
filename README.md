@@ -4,7 +4,7 @@
 
 - [CheerfulBeasts's Neovim configuration](#levis-own-neovim-configuration)
   - [Requirements](#requirements)
-  - [Additional plugins added](#additional-plugins-added)
+  - [Features](#features)
   - [Keymaps bindings](#keymaps-added)
   - [cord.nvim](#cordnvim)
   <!--toc:end-->
@@ -12,19 +12,48 @@
 ## Requirements
 
 - Neovim 0.10
-- any nerdfont
+- rustc
+- Clang
+- any nerdfont (for windows, protofont works best for me)
 
 ## Installation
-WIP
 
-## Additional plugins
+### For windows
 
-- cord.nvim : Discord rich presence plugin
-- copilot.nvim : Github copilot plugin
-- harpoon2 : fast file navigation plugin
-- surround : surround actions plugin
-- flutter-tools : flutter tools plugin for flutter environment
-- tailwind-tools: tailwind css plugin
+1. Clone this inside your `Appdata/local` directory
+
+```git
+git clone https://github.com/Levi-Ramos/levi-neovim-config.git
+```
+
+2. Go to the configuration directory and initiate LazyVim. This will install the lazyvim dependencies (be sure to configure your nvim in system variables)
+
+```
+nvim .
+```
+
+3. You're good to go!!
+
+### For Linux
+
+1. Clone this inside your `.config/nvim` directory
+
+```git
+git clone https://github.com/Levi-Ramos/levi-neovim-config.git
+```
+
+2. Go to the configuration directory and initiate LazyVim. This will install Lazyvim dependencies
+
+```
+nvim .
+```
+
+## Features
+
+- Flutter support
+- Discord rich presence
+- Surround text objects
+- Markdown Preview
 
 ## Keymaps added
 
@@ -62,12 +91,17 @@ I have some keymaps binded to the plugins I use, located at `lua/keymaps.lua`.
 - "Fo" : Toggle flutter outline
 - "Fl" : Restart flutter lsp (Language server protocol)
 
+### flutter-bloc
+
+- "Fb" : Bloc group
+- "Fbb" : Create bloc
+- "Fbc" : Create cubit
+
 ## Color Scheme
 
 This neovim configuration is using the [EverForest](https://github.com/sainnhe/everforest)
 
 ## Work in progress
 
-- integrate tmux into workflow
 - add multi cursor plugin
 - connect to discord rich presence on launch
