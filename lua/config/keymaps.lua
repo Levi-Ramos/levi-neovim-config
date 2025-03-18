@@ -49,6 +49,10 @@ end)
 
 -- flutter plugin tools keymaps
 local function setup_flutter_keymaps()
+  -- bloc
+  vim.keymap.set("n", "<leader>Fbb", ":FlutterCreateBloc", { noremap = true, desc = "Create Bloc" })
+  vim.keymap.set("n", "<leader>Fbc", ":FlutterCreateCubit", { noremap = true, desc = "Create Cubit" })
+
   vim.keymap.set("n", "<leader>Frr", ":FlutterRun<CR>", { noremap = true, silent = true, desc = "Run Flutter" })
   vim.keymap.set(
     "n",

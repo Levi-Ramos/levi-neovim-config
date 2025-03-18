@@ -33,6 +33,9 @@ return {
       callback = function(args)
         local client = vim.lsp.get_client_by_id(args.data.client_id)
         if client and client.name == "dartls" then
+          require("which-key").add({
+            { "<leader>Fb", group = "Bloc" },
+          })
           require("which-key").register({
             ["<leader>F"] = { name = "Flutter", icon = "" },
             ["<leader>Frr"] = { desc = "Run flutter", mode = "n" },
