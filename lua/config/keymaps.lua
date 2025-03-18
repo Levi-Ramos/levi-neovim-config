@@ -50,8 +50,8 @@ end)
 -- flutter plugin tools keymaps
 local function setup_flutter_keymaps()
   -- bloc
-  vim.keymap.set("n", "<leader>Fbb", ":FlutterCreateBloc", { noremap = true, desc = "Create Bloc" })
-  vim.keymap.set("n", "<leader>Fbc", ":FlutterCreateCubit", { noremap = true, desc = "Create Cubit" })
+  vim.keymap.set("n", "<leader>Fbb", ":FlutterCreateBloc<CR>", { noremap = true, desc = "Create Bloc" })
+  vim.keymap.set("n", "<leader>Fbc", ":FlutterCreateCubit<CR>", { noremap = true, desc = "Create Cubit" })
 
   vim.keymap.set("n", "<leader>Frr", ":FlutterRun<CR>", { noremap = true, silent = true, desc = "Run Flutter" })
   vim.keymap.set(
@@ -89,5 +89,21 @@ vim.api.nvim_create_autocmd("LspAttach", {
     if client and client.name == "dartls" then
       setup_flutter_keymaps()
     end
+  end,
+})
+
+local function setup_markdown_keymaps()
+  vim.keymap.set(
+    "n",
+    "<leader>md",
+    ":MarkdownPreview<CR>",
+    { noremap = true, silent = true, desc = "Preview Markdown" }
+  )
+end
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    setup_markdown_keymaps()
   end,
 })

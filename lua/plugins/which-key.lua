@@ -17,26 +17,25 @@ return {
   }),
 
   config = function()
-    -- Function to check if Dart LSP is attached
-    local function is_dart_lsp_attached()
-      local clients = vim.lsp.get_active_clients()
-      for _, client in ipairs(clients) do
-        if client.name == "dartls" then
-          return true
-        end
-      end
-      return false
-    end
-
+    local whichKey = require("which-key")
+    -- Register group if markdown is attach
+    vim.api.nvim_create_autocmd("Filetype", {
+      pattern = "markdown",
+      callback = function()
+        whichKey.add({
+          { "<leader>m", group = "Markdown", icon = "", buffer = true },
+        })
+      end,
+    })
     -- Register Flutter commands only if Dart LSP is attached
     vim.api.nvim_create_autocmd("LspAttach", {
       callback = function(args)
         local client = vim.lsp.get_client_by_id(args.data.client_id)
         if client and client.name == "dartls" then
-          require("which-key").add({
+          whichKey.add({
             { "<leader>Fb", group = "Bloc" },
           })
-          require("which-key").register({
+          whichKey.register({
             ["<leader>F"] = { name = "Flutter", icon = "" },
             ["<leader>Frr"] = { desc = "Run flutter", mode = "n" },
             ["<leader>Fd"] = { desc = "Show flutter devices", mode = "n" },
