@@ -1,0 +1,3 @@
+return {
+  "cosmicthemethhead/gitlens.nvim",
+}
