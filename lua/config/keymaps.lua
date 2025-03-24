@@ -47,12 +47,13 @@ vim.keymap.set("n", "<leader>Du", function()
   cord.unidle()
 end)
 
--- flutter plugin tools keymaps
+-- flutter keymaps
 local function setup_flutter_keymaps()
   -- bloc
   vim.keymap.set("n", "<leader>Fbb", ":FlutterCreateBloc<CR>", { noremap = true, desc = "Create Bloc" })
   vim.keymap.set("n", "<leader>Fbc", ":FlutterCreateCubit<CR>", { noremap = true, desc = "Create Cubit" })
 
+  -- flutter tools
   vim.keymap.set("n", "<leader>Frr", ":FlutterRun<CR>", { noremap = true, silent = true, desc = "Run Flutter" })
   vim.keymap.set(
     "n",
@@ -80,6 +81,12 @@ local function setup_flutter_keymaps()
     "<leader>Fl",
     ":FlutterLspRestart<CR>",
     { noremap = true, silent = true, desc = "Restart Flutter LSP" }
+  )
+  vim.keymap.set(
+    "n",
+    "<leader>Fu",
+    ":FlutterCopyProfilerUrl<CR>",
+    { noremap = true, silent = true, desc = "Copy Profiler Url" }
   )
 end
 
