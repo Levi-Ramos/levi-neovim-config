@@ -11,9 +11,15 @@ return {
     { "<leader>Dd", desc = "Disconnect from discord", mode = "n" },
     { "<leader>Dt", desc = "Toggle presence", mode = "n" },
     { "<leader>Ds", desc = "Show presence", mode = "n" },
-    { "<leader>Dh", desc = "Hide presence", mode = "n" },
-    { "<leader>Di", desc = "Show idle status", mode = "n" },
-    { "<leader>Du", desc = "Unhide idle status", mode = "n" },
+    { "<leader>dh", desc = "hide presence", mode = "n" },
+    { "<leader>di", desc = "show idle status", mode = "n" },
+    { "<leader>du", desc = "unhide idle status", mode = "n" },
+
+    -- surround
+    { "ys", desc = "Surround", mode = { 'n', 'v' } },
+
+    -- dap
+    { "<leader>dpt", desc = "Toggle DAP UI", mode = "n" }
   }),
 
   config = function()
