@@ -4,7 +4,6 @@
 
 -- dependency variables
 local cord = require("cord")
-local flutter = require("flutter-tools")
 
 -- Discord keymaps
 vim.keymap.set("n", "<leader>Dc", function()
@@ -114,3 +113,18 @@ vim.api.nvim_create_autocmd("FileType", {
     setup_markdown_keymaps()
   end,
 })
+
+-- greatest remap ever
+vim.keymap.set("x", "p", [["_dP]])
+
+-- next greatest remap ever : asbjornHaland
+vim.keymap.set({ "n", "v" }, "y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+vim.keymap.set({ "n", "v" }, "d", "\"_d")
+
+-- dap ui
+vim.keymap.set({ "n", "v" }, "<leader>dpt", ':lua require("dapui").toggle()<CR>',
+  { noremap = true, desc = 'Toggle Dap UI' })
+vim.keymap.set({ "n", "v" }, "<leader>dpd", ':lua requiredapui.disconnect()<CR>',
+  { noremap = true, desc = 'Toggle Dap UI' })
