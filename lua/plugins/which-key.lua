@@ -1,6 +1,5 @@
 return {
   "folke/which-key.nvim",
-  event = "VeryLazy",
   opts = {},
 
   keys = require("which-key").add({
@@ -16,10 +15,10 @@ return {
     { "<leader>du", desc = "unhide idle status", mode = "n" },
 
     -- surround
-    { "ys", desc = "Surround", mode = { 'n', 'v' } },
+    { "ys", desc = "Surround", mode = { "n", "v" } },
 
     -- dap
-    { "<leader>dpt", desc = "Toggle DAP UI", mode = "n" }
+    { "<leader>dpt", desc = "Toggle DAP UI", mode = "n" },
   }),
 
   config = function()
@@ -41,7 +40,7 @@ return {
           whichKey.add({
             { "<leader>Fb", group = "Bloc" },
           })
-          whichKey.register({
+          whichKey.add({
             ["<leader>F"] = { name = "Flutter", icon = "" },
             ["<leader>Frr"] = { desc = "Run flutter", mode = "n" },
             ["<leader>Fd"] = { desc = "Show flutter devices", mode = "n" },

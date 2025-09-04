@@ -121,10 +121,21 @@ vim.keymap.set("x", "p", [["_dP]])
 vim.keymap.set({ "n", "v" }, "y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({ "n", "v" }, "d", "\"_d")
+vim.keymap.set({ "n", "v" }, "d", '"_d')
 
 -- dap ui
-vim.keymap.set({ "n", "v" }, "<leader>dpt", ':lua require("dapui").toggle()<CR>',
-  { noremap = true, desc = 'Toggle Dap UI' })
-vim.keymap.set({ "n", "v" }, "<leader>dpd", ':lua requiredapui.disconnect()<CR>',
-  { noremap = true, desc = 'Toggle Dap UI' })
+vim.keymap.set(
+  { "n", "v" },
+  "<leader>dpt",
+  ':lua require("dapui").toggle()<CR>',
+  { noremap = true, desc = "Toggle Dap UI" }
+)
+vim.keymap.set(
+  { "n", "v" },
+  "<leader>dpd",
+  ":lua requiredapui.disconnect()<CR>",
+  { noremap = true, desc = "Toggle Dap UI" }
+)
+
+--neogit
+vim.keymap.set("n", "<leader>gn", ":Neogit<CR>", { noremap = true, silent = true, desc = "Open Neogit" })
